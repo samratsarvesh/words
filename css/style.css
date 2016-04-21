@@ -1,0 +1,509 @@
+	 @font-face{
+		font-family: 'Engagement';
+		src:url(../fonts/Engagement-Regular.ttf) format('truetype');
+	}
+	@font-face{
+		font-family: 'Chewy';
+		src:url(../fonts/Chewy.ttf) format('truetype');
+	}
+	@font-face{
+		font-family: 'Risque';
+		src:url(../fonts/Risque-Regular.ttf) format('truetype');
+	}
+	@font-face{
+		font-family: 'Ubuntu';
+		src:url(../fonts/Ubuntu-Regular.ttf) format('truetype');
+	}
+
+
+	body{
+		background-image: url("bg1.jpg");
+		}
+	body,html,h1,div,p,a,h3,table,span{
+		margin: 0;
+		border: 0;
+		outline: 0;
+		font-family: 'Ubuntu', sans-serif;
+	}
+	.header{
+		width:100%;
+		height: 90px;
+		background: #155E61;
+	}
+	.sidebar_wrapper{
+		width: 15%;
+		height: 570px;
+		float: left;
+		background: #F08080;
+	}
+
+	#secretalert{width: 60px;
+		height: 20px;
+		color: white;}
+	.content{
+		width: 85%;
+		height: 570px;
+		float: right;
+		overflow-y: scroll;
+		//background-color: rgba(23, 24, 25, 0.67);
+		
+	} 
+	.logo{
+		width: 60px;
+		height: 60px;
+		padding-top: 15px;
+		padding-left: 4px;
+		
+	}
+	.leftonhead
+	{
+		//border: 1px solid black;
+		width: 15%;
+		float: left;
+	}
+	.rightmenu
+	{
+		width: 30%;
+		float: right;
+	}
+	.usericon
+	{
+		width: 70px;
+		height: 70px;
+		padding-top: 10px;
+		float: right;
+		border-radius: 50%;
+		opacity: 1;
+	}
+	.usericon:hover
+	{
+		opacity: 0.3;
+	}
+	.dropdown{
+		//border: 2px solid black;
+		width: 100px;
+		height: 170px;
+		margin-top: -5px;
+		z-index: 1;
+		display: none;
+		position: absolute;
+		float: right;
+		margin-left: 260px;
+		background-color:rgba(255, 255, 255, 0.63);
+		border-radius: 10px;
+		border-bottom-right-radius: 50px;
+		border-top-right-radius: 20px;
+	}
+	.dropdown a
+	{
+		display: block;
+		margin: 10px;
+		border-radius: 10px;
+		background-color: rgba(23, 24, 25, 0.67);
+		//width: 100%;
+		//padding-top: 5px;
+		text-align: center;
+		padding: 10px;
+		text-decoration: none;
+		color: white;
+	}
+	.dropdown a:nth-last-child(1) {
+    background: #ff0000;
+	}
+	.dropdown a:hover
+	{
+		background-color: #F08080;;
+	}
+	.name{
+		color: white;
+		float: right;
+		font-family:'Risque', cursive;
+		padding-top: 15px;
+		padding-left: 8px;
+		font-size: 3.2vw;
+		float: left;
+	}
+	.username
+	{
+		color: white;
+		font-size: 1.9vw;
+		float: right;
+		padding-top: 30px;
+		padding-right: 5px;
+		font-family:'Risque', cursive;
+	}
+	.footer {
+		//border: 2px inset red;
+		width: 100%;
+		height: 23px;
+		background-color: #155E61;
+
+	}
+	.clear{
+		clear:both;
+		//margin-bottom:px;
+	}
+	.menu{
+		//border: 1px dotted black;
+		width: 100%;
+		height: auto;
+	}
+	ul
+	{
+		list-style-type:none;
+		margin:0;
+		padding:10px;
+	}
+	li
+	{
+		padding: 10px;
+	}
+	.menuitem:link,.menuitem:visited
+	{
+		display:block;
+		width:80%;
+		font-weight:bold;
+		color:#FFFFFF;
+		background-color:rgba(23, 24, 25, 0.29);
+		text-align:center;
+		padding:4px;
+		text-decoration:none;
+		text-transform:uppercase;
+		font-size: 1.2vw;
+	}
+	.menuitem:hover,.menuitem:active
+	{
+		background-color:#5F9EA0;
+	}
+	.pagename
+	{
+		text-align: center;
+		color: white;
+		font-family: 'Engagement', cursive;
+		//border: 1px solid red;
+		margin: 0;
+		font-size: 3.2vw;
+		position: relative;
+		
+	}
+	.article
+	{
+		//border: 3px solid black;
+		width: 40%;
+		height: 100px;
+		margin: 10px 50px 20px 50px;
+		float: left;
+		color: white;
+		background-color: rgba(23, 24, 25, 0.67);
+		box-shadow: 0px 10px 20px 3px #d3d3d3;
+		//font-family: 'Engagement', cursive;
+		overflow: hidden;
+		border-radius: 5px;
+	}
+	.articlepreview
+	{
+		padding-top: 3px;
+		padding-left: 10px;
+	}
+	.readmore
+	{
+		float: right;
+		color: white;
+		text-decoration: none;
+		padding-top: 25px;
+	}
+	.readmore:hover
+	{
+		color: #F08080;
+	}
+	h3{padding-left: 3px;}
+	
+	.articleinput
+	{
+		width: 100%;
+		//border: 1px solid white;
+		height: 525px;
+	}
+	input[type="text"]
+	{
+		background-color: rgba(30, 115, 117, 0.62);
+		color: white;
+		font-family: Ubuntu;
+		border-color: white;
+		width: 60%;
+		height: 40px;
+		font-size: 2.3vw;
+		border-radius: 5px;
+	}
+	input[type="text"]:hover,input[type="text"]:focus
+	{
+		border-color: green;
+	}
+	textarea
+	{
+		background-color: rgba(30, 115, 117, 0.62);
+		color: white;
+		font-family: Ubuntu-Regular;
+		border-color: white;
+		width: 90%;
+		border-radius: 5px;
+		font-size: 1.2em;
+		resize: none;
+		//font-weight: bold;
+
+	}
+	textarea:hover,textarea:focus
+	{
+		border-color: green;
+	}
+	input[type="submit"]
+	{
+		background-color: rgba(30, 115, 117, 0.62);
+		color: white;
+		font-family: cursive;
+		//border-color: white;
+		width: 15%;
+		height: 40px;
+		font-size: 1.3em;
+		border-radius: 5px;
+		text-align: center;
+	}
+	input[type="submit"]:hover,input[type="submit"]:active
+	{
+		background-color: #5F9EA0;
+	}
+	.slideThree {
+	width: 120px;
+	height: 26px;
+	background: #5F9EA0;
+	//margin: 20px auto;
+
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	position: relative;
+
+	-webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+	-moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+	}
+
+	.slideThree:after {
+			content: 'OFF';
+			font: 12px/26px Arial, sans-serif;
+			color: #000;
+			position: absolute;
+			right: 10px;
+			z-index: 0;
+			font-weight: bold;
+			text-shadow: 1px 1px 0px rgba(255,255,255,.15);
+		}
+
+		.slideThree:before {
+			content: 'ON';
+			font: 12px/26px Arial, sans-serif;
+			color: green;
+			position: absolute;
+			left: 10px;
+			z-index: 1;
+			font-weight: bold;
+		}
+
+		.slideThree label {
+			display: block;
+			width: 60px;
+			height: 20px;
+			text-align: center;
+			color: white;
+			font-family: chiller;
+
+			-webkit-border-radius: 50px;
+			-moz-border-radius: 50px;
+			border-radius: 50px;
+
+			-webkit-transition: all .4s ease;
+			-moz-transition: all .4s ease;
+			-o-transition: all .4s ease;
+			-ms-transition: all .4s ease;
+			transition: all .4s ease;
+			cursor: pointer;
+			position: absolute;
+			top: 3px;
+			left: 3px;
+			z-index: 99;
+
+			-webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+			-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+			box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+			background: #F08080;
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
+		}
+
+		.slideThree input[type=checkbox]:checked + label {
+			left: 50px;
+		}
+		.articleholder
+		{
+			background-color: rgba(30, 115, 117, 0.62);
+			color: white;
+			width: 90%;
+			height: 400px;
+			overflow-y: scroll;
+			margin: 20px;
+			text-align: left;
+	/*		box-shadow: 1 2 0 4;*/
+		}
+		.articledisplay
+		{
+			padding: 10px;
+			margin: 20px;
+
+		}
+
+	.update input[id="delete"]:hover,input[id="delete"]:active
+	{
+		background-color: red;
+	}
+	.update input[id="update"]:hover,input[id="update"]:active
+	{
+		background-color: green;
+	}
+	.typing
+	{
+		//border: 1px solid black;
+		width: 10%;
+		height: auto;
+		font-family: 'Risque', Arial;
+		color: white;
+		float: left;
+		margin-left: 50%;
+	}
+
+	/*new style for secret box*/ 
+
+	/*-----------------------------------------------------------*/
+
+	.new_pin
+	{
+		//border: 3px solid black;
+		width: 40%;
+		height: 300px;
+		margin: 60px 50px 20px 50px;
+		//float: left;
+		color: white;
+		background: rgba(23, 24, 25, 0.67)  url("../img/lock1.png") no-repeat;
+		background-position: center;
+		box-shadow: 0px 10px 20px 3px #d3d3d3;
+		//font-family: 'Engagement', cursive;
+		overflow: hidden;
+		border-radius: 5px;
+	}
+	.msg
+	{
+		color: rgb(255, 209, 31);
+		font-family: 'Engagement', cursive;
+		margin-top: 30px;
+		font-weight: lighter;
+		font-size: 5vw;
+	}
+	input[type="password"]
+	{
+		background-color: rgba(30, 115, 117, 0.62);
+		color: white;
+		font-family: Ubuntu;
+		border-color: white;
+		width: 40%;
+		height: 40px;
+		font-size: 2.3vw;
+		border-radius: 3px;
+	}
+	input[type="password"]:hover,input[type="password"]:focus
+	{
+		border-color: green;
+	}
+	.new_pin table
+	{
+		text-align: center;
+	}
+	caption
+	{
+		caption-side: bottom;
+		color: white;
+		margin-top: 40px;
+	}
+	.nothing
+	{
+		background-image: url("../img/nothing.gif");
+		height: 500px;
+		width: 60%;
+		background-position: center;
+		background-repeat: no-repeat;
+		position: fixed;
+		margin-left: 150px;
+		border-radius: 50px;
+	}
+	
+	.h1
+	{
+		margin-top: 350px;
+	}
+	.h1 a
+	{
+		display: inline-block;
+		text-decoration: none;
+		color: #F08080;
+	}
+	.h1 a:hover{color: blue;}
+	.secretwelcome
+	{
+		background: rgba(23, 24, 25, 0.29) url("../img/lock.png") no-repeat;
+		background-position: center;
+		width: 70%;
+		color: rgb(255, 209, 31);
+		height: 400px;
+		display: block;
+	}
+	.secretwelcome h1
+	{
+		color: #F08080;
+	}
+	#aboutsb{
+		margin-top: 270px;
+		color: white;
+	}
+	#nogenerate
+	{
+		//border: 1px solid white;
+		height: 60px;
+		width: 20%;
+		float: left;
+		margin-top: 70px;
+		margin-left: 50px;
+	}
+	#generate
+	{
+		//border: 1px solid white;
+		height: 60px;
+		width: 20%;
+		float: right;
+		margin-top: 70px;
+		margin-right: 50px;
+	}
+  input[type="button"] {
+  -webkit-border-radius: 12;
+  -moz-border-radius: 12;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 3px 5px #666666;
+  -moz-box-shadow: 0px 3px 5px #666666;
+  box-shadow: 0px 3px 5px #666666;
+  color: #ffffff;
+  font-size: 23px;
+  background: #3498db;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+input[type="button"]:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+}

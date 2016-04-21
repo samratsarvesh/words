@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+</head>
+<style type="text/css">
+	.bg{
+		background-image: url("bg.png");
+	}
+	.login_form
+	{
+		height: 400px;
+		width: 60%;
+		border: 1px solid black;
+		position: relative;
+		margin-top: 80px;
+		border-left: 60px solid black;
+		border-radius: 6px;
+		border-bottom-right-radius: 50px;
+		background-color: #008B8B;
+		
+	}
+	h1{
+		text-align: center;
+		color: red;
+	}
+	input.ip_area {
+    width: 83%;
+    padding: 10px 10px 10px 40px;
+    background: rgba(23, 24, 25, 0.29) url("user.png") no-repeat 10px 10px;
+    border: 1px solid #7B7474;
+    border-radius: 5px;
+    
+    font-size: 18px;
+    color: #FFF;
+    //outline: none;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+   }
+   input.submit {
+   	background: rgba(23, 24, 25, 0.29);
+   	width: 50%;
+   	border-radius: 5px;
+   	height: 30px;
+   	color: white;
+   }
+   label
+   {
+   	font-size: 18px;
+   	color: white;
+
+   }
+   table{
+   	text-align: center;
+   	margin-top: 50px;
+   }
+   caption {caption-side:bottom;}
+
+
+</style>
+<body class="bg">
+<h1 onmouseover="animateHead()" onmouseout="innerHTML='Register'" id="h1">Registration</h1>
+<center>
+<form class="login_form" name="login" id="login" action="demo_form.asp"  method="post" onkeydown="myFunction()" onkeyup="myFunction1()">
+
+	<table class="form_table">
+	<caption id="type"></caption>
+			<tr>
+				<td><label for="name">Name</label></td>
+				<td><input type="text" id="name" class="ip_area"  name="name"/></td>
+			</tr>
+			<tr>
+				<td><label for="email">Email</label></td>
+				<td><input type="email" id="email" class="ip_area" name="email"/></td>
+			</tr>
+			<tr>
+				<td><label for="password">Password</label></td>
+				<td><input type="text" id="password" class="ip_area" name="password"/></td>
+			</tr>
+			<tr>
+				<td><label for="password">Retype Password</label></td>
+				<td><input type="text" id="r_password" class="ip_area" name="r_password" onblur="validateForm()" /></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td align="right"><input type="submit" class="submit" id="submit" value="Submit" hidden="true" /></td>
+			</tr>
+
+
+	</table>
+	
+
+</form>
+</center>
+
+<script type="text/javascript">
+    var form_flag=0;
+	function enableSubmit()
+		
+	{       if(form_flag==4)
+			document.getElementById("submit").hidden=false;
+	}
+	function myFunction()
+		
+	{       
+			document.getElementById("type").innerHTML="Typing........";
+	}
+	function myFunction1()
+		
+	{       
+			document.getElementById("type").innerHTML="   ";
+	}
+
+	function animateHead()
+	    {
+	        document.getElementById("h1").innerHTML="Enter Details Below To Register";
+	    }
+   
+
+	function validateForm()
+    { 
+		var x=document.forms["login"]["name"].value;
+		if (x==null || x=="")
+		  {
+		  alert("Name must be filled out");
+		  return false;
+		  }
+		  else
+		  	form_flag++;
+		x=document.forms["login"]["email"].value;
+		if (x==null || x=="")
+		  {
+		  alert("Email must be filled out");
+		  return false;
+		  }
+		  else
+		  	form_flag++;
+		x=document.forms["login"]["password"].value;
+		if (x==null || x=="")
+		  {
+		  alert("Password must be filled out");
+		  return false;
+		  }
+		  else
+		  	form_flag++;
+		x=document.forms["login"]["r_password"].value;
+		if (x==null || x=="")
+		  {
+		  alert("Re enter password");
+		  return false;
+		  }
+		  else
+		  form_flag++;
+		  
+		  enableSubmit();
+    }
+   
+</script>
+</body>
+</html>

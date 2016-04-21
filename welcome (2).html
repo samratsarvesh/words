@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Words | The Personal Diary</title>
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
+</head>
+
+<body>
+<div class="center">
+	<div class="slider">
+  <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
+  <input type="radio" name="slider" title="slide2" class="slider__nav"/>
+  <input type="radio" name="slider" title="slide3" class="slider__nav"/>
+  <input type="radio" name="slider" title="slide4" class="slider__nav"/>
+  <div class="slider__inner">
+    <div class="slider__contents"><img src="img/heart.png" class="images"></i>
+      <h2 class="slider__caption" id="homehead">Words</h2>
+      <p class="slider__txt">Bring your life's work together in one digital workspace. WORDS is the place to collect inspirational ideas, write meaningful words, and move your important Words in a single platform.</p>
+    </div>
+    <div class="slider__contents"><img src="img/heart.png" class="images"></i>
+      <h2 class="slider__caption">About</h2>
+      <p class="slider__txt">Your personal diary is on the go with you and it on selves of internet. Easily accessable and much more safer than your hard bound diary. Port your articles and write wherever you want.Signup to explore the features and save your articles.</p>
+    </div>
+    <div class="slider__contents"><img src="img/heart.png" class="images"></i>
+      <h2 class="slider__caption">Secret Box</h2>
+      <p class="slider__txt">Your secret is a secret. Words provide you with a secret box for all your secret articles. Create your secret box in the app and post secrets words secretly</p>
+    </div>
+    <div class="slider__contents"><img src="img/heart.png" class="images"></i>
+      <h2 class="slider__caption">Privecy</h2>
+      <p class="slider__txt">What is private remains private with Words. Not only the secret articles but the regular notes are also private and accessable by you only.</p>
+	</div>
+  </div>
+</div>
+	
+</div>
+<div class="signup">
+	<div class="text">
+		<h2>Get Started</h2>
+	</div>
+	<div class="click" onclick="send('signup.jsp')">
+		 <button id="signup">Signup</button> 
+	</div>
+</div>
+<div class="clear"></div>
+<div class="login">
+	<div class="text">
+		<h2>Already in?</h2>
+	</div>
+	<div class="click" onclick="send('login.jsp')">
+		 <button id="signup">Login</button> 
+	</div>
+</div>
+
+</body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46156385-1', 'cssscript.com');
+  ga('send', 'pageview');
+
+</script>
+<script type="text/javascript">
+	function send (argument) {
+		// body...
+		window.location=argument;
+	}
+</script>
+</html>

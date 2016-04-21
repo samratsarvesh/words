@@ -1,0 +1,75 @@
+   @font-face{
+    font-family: 'Engagement';
+    src:url(../fonts/Engagement-Regular.ttf) format('truetype');
+  }
+
+	.bg{
+		background-image: url("../img/bg1.jpg");
+	}
+	.login_form
+  {
+    height: 450px;
+    width: 60%;
+    border: 1px solid black;
+    position: relative;
+    margin-top: 50px;
+    border-left: 60px solid black;
+    border-radius: 6px;
+    border-bottom-right-radius: 50px;
+    background: rgba(23, 24, 25, 0.67)  url("../img/heart.png") no-repeat;
+    background-position: center;
+    
+  }
+  .login_form h1{
+    text-align: center;
+    color: yellow;
+    font-family: cursive;
+    font-size: 1.8vw;
+  }
+  .login_form a{
+    color: orange;
+    text-decoration: none;}
+  .login_form a:hover{color: white;}
+  h1
+  {
+    color: white;
+    font-family: 'Engagement';
+    font-size: 3.2vw;
+    //margin-top: 50px;
+  }
+	input.ip_area {
+    width: 83%;
+    padding: 10px 10px 10px 40px;
+    background: rgba(23, 24, 25, 0.29) url("user.png") no-repeat 10px 10px;
+    border: 1px solid #7B7474;
+    border-radius: 5px;
+    
+    font-size: 18px;
+    color: #FFF;
+    //outline: none;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+   }
+   input.submit {
+   	background: rgba(23, 24, 25, 0.29);
+   	width: 50%;
+   	border-radius: 5px;
+   	height: 30px;
+   	color: white;
+   }
+   label
+   {
+   	font-size: 18px;
+   	color: white;
+
+   }
+   table{
+   	text-align: center;
+   	margin-top: 50px;
+   }
+   caption {caption-side:bottom;}
+   #m{
+   	color: white;
+   }
+
+

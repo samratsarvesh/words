@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	Welcome: Home
+	</title>
+	<script src="jquery.min.js"></script>
+	<script> 
+		$(document).ready(function(){
+		  $("#flip").click(function(){
+		    $("#panel").slideToggle("slow");
+		  });
+		});
+	</script>
+	<style type="text/css">
+	body{
+		background-image: url("bg1.jpg");
+		//background-repeat: no-repeat;
+    	//background-attachment: fixed;
+    	//background-position: center;
+    	//background-size: cover;
+		//background-color: rgba(76, 142, 250, 0.46);
+		}
+	body,html,h1,div,p,a,h3{
+		margin: 0;
+		border: 0;
+		outline: 0;
+	}
+	.header{
+		width:100%;
+		height: 90px;
+		background: #5F9EA0;
+	}
+	.sidebar{
+		width: 15%;
+		height: 570px;
+		float: left;
+		background: #F08080;
+	}
+	.content{
+		width: 85%;
+		height: 570px;
+		float: right;
+		//background-color: rgba(23, 24, 25, 0.67);
+		
+	} 
+	.logo{
+		width: 60px;
+		height: 60px;
+		padding-top: 15px;
+		
+	}
+	.usericon
+	{
+		width: 60px;
+		height: 60px;
+		padding-top: 15px;
+		float: right;
+	}
+	.name{
+		color: white;
+		float: left;
+		font-family: cursive;
+		//font-size: 32px;
+		padding-left: 25px;
+		padding-top: 15px;
+	}
+	.username
+	{
+		color: white;
+		font-size: 1.9vw;
+		float: right;
+		padding-top: 30px;
+		padding-right: 5px;
+	}
+	.footer {
+		//border: 2px inset red;
+		width: 100%;
+		height: 23px;
+		background-color: #1E7375;
+
+	}
+	.clear{
+		clear:both;
+		//margin-bottom:px;
+	}
+	.menu{
+		border: 1px dotted black;
+		width: 100%;
+		height: auto;
+	}
+	ul
+	{
+		list-style-type:none;
+		margin:0;
+		padding:10px;
+	}
+	li
+	{
+		padding: 10px;
+	}
+	.menuitem:link,.menuitem:visited
+	{
+		display:block;
+		width:80%;
+		font-weight:bold;
+		color:#FFFFFF;
+		background-color:rgba(23, 24, 25, 0.29);
+		text-align:center;
+		padding:4px;
+		text-decoration:none;
+		text-transform:uppercase;
+		font-size: 1.2vw;
+	}
+	.menuitem:hover,.menuitem:active
+	{
+		background-color:#5F9EA0;
+	}
+	.pagename
+	{
+		text-align: center;
+		color: white;
+		font-family: cursive;
+		//border: 1px solid black;
+		margin: 0;
+	}
+	.article
+	{
+		//border: 3px solid black;
+		width: 40%;
+		height: 100px;
+		margin: 10px 50px 20px 50px;
+		float: left;
+		color: white;
+		background-color: rgba(23, 24, 25, 0.67);
+		box-shadow: 0px 10px 20px 3px #d3d3d3;
+		overflow: hidden;
+	}
+	.articlepreview
+	{
+		padding-top: 3px;
+		padding-left: 10px;
+	}
+	.readmore
+	{
+		float: right;
+		color: white;
+		text-decoration: none;
+	}
+	h3{padding-left: 3px;}
+
+	.dropdown{
+		border: 2px solid black;
+		width: 100px;
+		height: 150px;
+		margin-top: -5px;
+		z-index: 1;
+		display: none;
+		position: absolute;
+		float: right;
+		margin-left: 1065px;
+		background-color: red;
+	}
+	</style>
+</head>
+<body>
+<div class="header">
+	<div>
+	<img src="img/heart.png" class="logo">
+	<h1 class="name">Words</h1>
+	<h1 class="username">welcome Samrat</h1>
+
+	<img src="img/user.png" class="usericon" id="flip">
+	<div class="clear"></div>
+	<div class="dropdown" id="panel"></div>
+	</div>
+	
+	
+</div>
+<div class="clear"></div>
+<div class="sidebar">
+	<nav class="menu">
+	<center>
+	<ul>
+		<li><a class="menuitem" href="#home">Home</a></li>
+		<li><a class="menuitem" href="#news">News</a></li>
+		<li><a class="menuitem" href="#contact">Contact</a></li>
+		<li><a class="menuitem" href="#about">About</a></li>
+	</ul>
+	</center>
+	</nav>
+</div>
+<div class="content">
+	<h1 class="pagename">Your Words</h1>
+	<div class="article">
+		<h3>Article title</h3>
+		<p class="articlepreview">Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit onec molestie non sem vel condimentum. 
+		</p>
+		<a class="readmore" href="#">More...</a>
+	</div>
+	<div class="article">
+	<h3>Article title</h3>
+		<p class="articlepreview">Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit onec molestie non sem vel condimentum. 
+		</p>
+		<a class="readmore" href="#">More...</a>
+	</div>
+	<div class="article">
+	<h3>Article title</h3>
+		<p class="articlepreview">Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit onec molestie non sem vel condimentum. 
+		</p>
+		<a class="readmore" href="#">More...</a>
+	</div>
+	<div class="article">
+	<h3>Article title</h3>
+		<p class="articlepreview">Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit onec molestie non sem vel condimentum. 
+		</p>
+		<a class="readmore" href="#">More...</a>
+	</div>
+
+</div>
+<div class="clear"></div>
+<div class="footer"></div>
+
+
+</body>
+</html>
