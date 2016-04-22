@@ -34,7 +34,7 @@ Article : Read
          {
          	Class.forName("com.mysql.jdbc.Driver");
             java.sql.Connection con=DriverManager.getConnection
-            ("jdbc:mysql://localhost:3306/words","sarvesh","asd");
+            ("jdbc:mysql://127.11.119.2:3306/words","sarvesh","asd");
             System.out.println("Connected...ON welcome2 PAGE");
 			String q="select * from article where id='"+articleid+"' and author='"+email+"'";
             System.out.println("Connected");

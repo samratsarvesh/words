@@ -12,7 +12,7 @@ try
          {
          	Class.forName("com.mysql.jdbc.Driver");
             java.sql.Connection con=DriverManager.getConnection
-            ("jdbc:mysql://localhost:3306/words","sarvesh","asd");
+            ("jdbc:mysql://127.11.119.2:3306/words","sarvesh","asd");
             System.out.println("Connected...ON LOGINACTION PAGE");
 			String q="select * from users where email='"+email+"' and password='"+password+"'";
             System.out.println("Connected");

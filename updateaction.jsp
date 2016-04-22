@@ -27,7 +27,7 @@
          {
          	Class.forName("com.mysql.jdbc.Driver");
             java.sql.Connection con=DriverManager.getConnection
-            ("jdbc:mysql://localhost:3306/words","sarvesh","asd");
+            ("jdbc:mysql://127.11.119.2:3306/words","sarvesh","asd");
             System.out.println("Connected...ON UPDATEACTION PAGE");
 			String q="update article set title='"+title+"' , content='"+content+"', protected='"+secret+"' where id='"+articleid+"'";
        		PreparedStatement pst = con.prepareStatement(q);

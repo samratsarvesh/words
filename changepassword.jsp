@@ -22,7 +22,7 @@
          {
          	Class.forName("com.mysql.jdbc.Driver");
             java.sql.Connection con=DriverManager.getConnection
-            ("jdbc:mysql://localhost:3306/words","sarvesh","asd");
+            ("jdbc:mysql://127.11.119.2:3306/words","sarvesh","asd");
             System.out.println("Connected...ON CHECKSECRETBOX PAGE");
 			String q="select password from users where email='"+email+"'";
             String q2="update users set password='"+newpassword+"' where email='"+email+"'";
